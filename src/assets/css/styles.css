@@ -1,0 +1,67 @@
+/** VARIABLES **/
+main {
+  min-width: 375px;
+  width: 100%;
+  max-width: 768px;
+  display: block;
+  margin: 0 auto;
+  background-color: #f4f4f4; }
+
+.odontograma-box {
+  position: relative; }
+
+a#button-download {
+  position: absolute;
+  right: 20px;
+  bottom: 0; }
+
+object#odontograma-svg {
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+
+path {
+  transition: all 0.3s ease; }
+
+.selectedTeeth {
+  fill: #4991cc; }
+
+.options-odontograma {
+  background-color: white; }
+  .options-odontograma ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap; }
+    .options-odontograma ul li {
+      width: 33%;
+      margin: 10px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .options-odontograma ul li span {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        border: 1px solid #b9b9b9;
+        display: block;
+        margin-right: 10px;
+        position: relative;
+        transition: all 0.3s ease;
+        cursor: pointer; }
+      .options-odontograma ul li span:hover {
+        background-color: #0066ac; }
+      .options-odontograma ul li span.selected {
+        background-color: #0066ac; }
+      .options-odontograma ul li span.selected:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 5px;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        top: 35%;
+        left: 20%;
+        transform: rotate(135deg); }

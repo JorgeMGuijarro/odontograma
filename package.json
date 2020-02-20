@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "scss": "node-sass --watch src/assets/scss -o src/assets/css"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +20,9 @@
     "@angular/platform-browser": "~9.0.2",
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
+    "jquery": "^3.4.1",
     "rxjs": "~6.5.4",
+    "sass-node": "^4.11.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

@@ -1,0 +1,91 @@
+/** VARIABLES **/
+
+$greyBackground :rgb(244,244,244);
+$generalTextColor: rgb(71, 74, 74);
+$greyBorder :rgb(185, 185, 185);
+$blueColor: rgb(0, 102, 172);
+
+body{
+    
+}
+
+
+main {
+    min-width: 375px;
+    width: 100%;
+    max-width: 768px;
+    display: block;
+    margin: 0 auto;
+    background-color:$greyBackground;
+}
+
+.odontograma-box {
+    position: relative;
+}
+
+a#button-download {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+object#odontograma-svg {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+path{
+    transition:all 0.3s ease
+    }
+.selectedTeeth{
+    fill:#4991cc;
+}
+
+.options-odontograma {
+    background-color: white;
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        flex-wrap:wrap;
+        li{
+            width:33%;
+            margin:10px 0px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            span{
+                width:30px;
+                height:30px;
+                border-radius:100%;
+                border:1px solid $greyBorder;
+                display:block;
+                margin-right:10px;
+                position:relative;
+                transition:all 0.3s ease;
+                cursor:pointer;
+            }
+            span:hover{
+                background-color:$blueColor;
+            }
+            span.selected{
+                background-color:$blueColor;
+            }
+            span.selected:after{
+                content:"";
+                position:absolute;
+                width:15px;
+                height:5px;
+                border-top:2px solid white;
+                border-right:2px solid white;
+                top:35%;
+                left:20%;
+                transform:rotate(135deg);
+            }
+        }
+    }
+}
+
